@@ -3,8 +3,7 @@ package Servidor;
 import java.util.ArrayList;
 
 public class Usuario {
-   
-	private static ArrayList<Usuario> listaUsuarios = new ArrayList<>();
+    private static ArrayList<Usuario> listaUsuarios = new ArrayList<>();
     
     private String nombre;
     private String password;
@@ -57,14 +56,18 @@ public class Usuario {
  
 	/****************************/
   
-        
-        public static void registrar(String nombre, String password, String mail){
+        public static int verificarUsuario(String nombre, String password, String mail){
         Usuario usuario;
         int a = 0;
             for(int i=0; i<getListaUsuarios().size();i++){
                 if(getListaUsuarios().get(i).getNombre().equals(nombre)){
-                a=1;}}
-                if (a!=1){
+                return 1;
+                }}
+            return 0;
+        }
+        public static void registrar(String nombre, String password, String mail){
+                    int a = verificarUsuario(nombre, password, mail);
+                    if(a==0){
                     Usuario.getListaUsuarios().add(new Usuario(nombre, password,mail));
             }
             }
