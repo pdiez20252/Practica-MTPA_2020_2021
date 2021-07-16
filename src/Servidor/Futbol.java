@@ -14,5 +14,12 @@ public class Futbol
         String  palabra = palabras[n];
         return palabra;
     }
+
+    @Override
+    public int comprobarLetra() {
+        //de la palabra que ha generado aleatoriamente, la recorremos con la letra que
+        //nos hayan metido
+        return 1;
+    }
         
 }

@@ -65,10 +65,18 @@ public class Usuario {
                 }}
             return 0;
         }
-        public static void registrar(String nombre, String password, String mail){
+        public void registrar(String nombre, String password, String mail){
                     int a = verificarUsuario(nombre, password, mail);
                     if(a==0){
                     Usuario.getListaUsuarios().add(new Usuario(nombre, password,mail));
             }
             }
+        
+        /* TEST */
+        public void imprimirUsuarios(){
+        for(int i = 0; i<getListaUsuarios().size(); i++) {
+            System.out.println(getListaUsuarios().get(i).getListaUsuarios());
+        } 
+    }
+        
 }
