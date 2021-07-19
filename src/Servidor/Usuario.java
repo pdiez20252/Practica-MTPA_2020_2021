@@ -75,7 +75,7 @@ public class Usuario {
         /* TEST */
         public void imprimirUsuarios(){
         for(int i = 0; i<getListaUsuarios().size(); i++) {
-            System.out.println(getListaUsuarios().get(i).getListaUsuarios());
+            System.out.println("Usuario: "+ getListaUsuarios().get(i).nombre+ " Contraseña:"+ getListaUsuarios().get(i).password+" Mail: "+getListaUsuarios().get(i).mail);
         } 
     }
         
