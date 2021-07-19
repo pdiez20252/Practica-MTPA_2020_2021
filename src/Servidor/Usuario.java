@@ -60,7 +60,7 @@ public class Usuario {
         Usuario usuario;
         int a = 0;
             for(int i=0; i<getListaUsuarios().size();i++){
-                if(getListaUsuarios().get(i).getNombre().equals(nombre)){
+                if(getListaUsuarios().get(i).getNombre().equals(nombre) || getListaUsuarios().get(i).getMail().equals(mail)){
                 return 1;
                 }}
             return 0;
