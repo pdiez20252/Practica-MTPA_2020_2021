@@ -13,7 +13,7 @@ public class Futbol
     //se puede meter en clase padre??
     public String getPalabraRandom() {
         Random r = new Random();
-        int n = r.nextInt(palabras.length); //esta metiendo una letra nueva no palabras
+        int n = r.nextInt(palabras.length); //
         String  palabra = palabras[n];
         return palabra;
     }
