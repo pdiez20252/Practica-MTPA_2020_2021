@@ -59,4 +59,17 @@ public class Servidor {
         usuarios.put(usuario, new Usuario(usuario, pass));
         return true;
     }
+    
+    boolean crearPartida(String nombrePartida, int sala){
+        
+        
+        
+        return false;
+        
+        
+         
+            }
+    
+    
+    
 }

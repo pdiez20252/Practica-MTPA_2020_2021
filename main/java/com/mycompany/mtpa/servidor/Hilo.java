@@ -49,6 +49,11 @@ public class Hilo extends Thread {
                         salida.write(""+aceptado+"\n");
                         salida.flush();
                         break;
+                   /* case "crearPartida":
+                        aceptado = serv.crearPartida(comando[1],comando[2]);
+                        salida.write(""+aceptado+"\n");
+                        salida.flush(); 
+                        break;*/
                 }
                 
             }
