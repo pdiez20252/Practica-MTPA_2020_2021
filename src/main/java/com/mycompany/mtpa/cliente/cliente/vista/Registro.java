@@ -85,7 +85,7 @@ private void registrar(){
             new Login().setVisible(true);
             setVisible(false);
         }else{
-          JOptionPane.showMessageDialog(null, "Registro no válido, usuario o correo ya registrados o contraseña demasiado corta (Mínimo 3 caracteres)",  "Error",JOptionPane.ERROR_MESSAGE);
+          JOptionPane.showMessageDialog(null, "Registro no válido, usuario o correo ya registrados o contraseña demasiado corta (Mínimo 4 caracteres)",  "Error",JOptionPane.ERROR_MESSAGE);
 
         }
     }
