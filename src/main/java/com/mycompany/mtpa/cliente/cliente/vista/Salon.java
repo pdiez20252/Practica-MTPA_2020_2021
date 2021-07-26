@@ -320,7 +320,7 @@ public class Salon extends javax.swing.JFrame {
                 jTablaPersona.setModel(new javax.swing.table.DefaultTableModel(
             matriz,
             new String [] {
-                "Partida", "Contrincantes"
+                "Partida", "Contrincantes + Puntuacion"
             }
              
         ) {
